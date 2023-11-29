@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-lcase = ord('z')
-ucase = ord('Y')
+lcase = 'z'
+ucase = 'Y'
 
-while (lcase >= ord('a') and ucase >= ord('A')):
-    print(chr(lcase) + chr(ucase), end='')
-    lcase -= 2
-    ucase -= 2
+while (ord(lcase) >= ord('a') and ord(ucase) >= ord('A')):
+    print("{}{}".format(lcase, ucase), end='')
+    lcase = chr(ord(lcase) - 2)
+    ucase = chr(ord(ucase) - 2)
 print()
