@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <Python.h>
+#include "Python.h"
 
 /**
  * print_python_list_info - prints info about a python list
@@ -18,6 +18,6 @@ void print_python_list_info(PyObject *p)
 
 	for (i = 0; i < pp->ob_base.ob_size; i++)
 	{
-		printf("Element %d: %s\n", i, pp->ob_item[i]->ob_type->tp_name)
+		printf("Element %d: %s\n", i, pp->ob_item[i]->ob_type->tp_name);
 	}
 }

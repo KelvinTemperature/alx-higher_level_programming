@@ -9,14 +9,14 @@
 int is_palindrome(listint_t **head)
 {
 	int list[1000];
-	int i = 0, j, k;
+	long int i = 0, j, k;
 	listint_t *temp;
 
 	if (*head == NULL)
 		return (1);
 
 	temp = *head;
-	while (temp != NULL && temp->next != NULL)
+	while (temp != NULL)
 	{
 		list[i] = temp->n;
 		i++;
