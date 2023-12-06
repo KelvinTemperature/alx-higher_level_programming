@@ -8,7 +8,7 @@
 
 int is_palindrome(listint_t **head)
 {
-	int list[1000];
+	int list[10000];
 	long int i = 0, j, k;
 	listint_t *temp;
 
