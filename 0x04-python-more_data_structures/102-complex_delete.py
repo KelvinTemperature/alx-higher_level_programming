@@ -8,5 +8,5 @@ def complex_delete(a_dictionary, value):
 
     for key in delete:
         del a_dictionary[key]
-    
+
     return a_dictionary
