@@ -20,7 +20,9 @@ def roman_to_int(roman_string):
             if i == len(roman_string) - 1:
                 if romans[roman_string[i]] > romans[roman_string[i - 1]]:
                     num_int -= romans[roman_string[i - 1]]
-                    num_int += (romans[roman_string[i]] - romans[roman_string[i - 1]])
+                    a = romans[roman_string[i - 1]]
+                    b = romans[roman_string[i]]
+                    num_int += (b - a)
                     i += 1
                 else:
                     num_int += romans[roman_string[i]]
