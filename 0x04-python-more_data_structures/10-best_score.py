@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     temp_list = []
 
-    if a_dictionary == {} or a_dictionary == None:
+    if a_dictionary == {} or a_dictionary is None:
         return None
 
     for k in a_dictionary:
