@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    temp_dict = []
-    i = 0
-    if a_dictionary(sorted(a_dictionary)[i]) < a_dictionary(sorted(a_dictionary)[i + 1]):
-        temp_dict[i] = a_dictionary(sorted(a_dictionary)[i])
+    temp_list = []
+
+    if a_dictionary == {} or a_dictionary == None:
+        return None
+
+    for k in a_dictionary:
+        temp_list.append(a_dictionary[k])
+
+    best_score = max(temp_list)
+
+    for k, v in a_dictionary.items():
+        if v == best_score:
+            return k
