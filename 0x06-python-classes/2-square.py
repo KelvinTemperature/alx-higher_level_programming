@@ -8,6 +8,7 @@ class Square:
 
         Args:
             param1 (int): size of the square
+
         """
 
         if not isinstance(size, int):

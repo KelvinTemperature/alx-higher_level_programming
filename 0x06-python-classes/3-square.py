@@ -8,6 +8,7 @@ class Square:
 
         Args:
             param1 (int): size of the square
+
         """
 
         if not isinstance(size, int):
@@ -22,6 +23,7 @@ class Square:
 
         Returns:
                 square of the size of the square
+
         """
 
         return self.__size ** 2
