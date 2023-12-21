@@ -5,6 +5,26 @@
 class Square:
     """Class that defines a square."""
 
+    def __str__(self):
+        """Prints a square of size to the stdout
+        """
+
+        ret = ''
+
+        if self.size == 0:
+            return ret
+        else:
+            for i in range(self.position[1]):
+                ret += '\n'
+            for i in range(0, self.size):
+                for k in range(self.position[0]):
+                    ret += ' '
+                for j in range(self.size):
+                    ret += '#'
+                if i != self.size - 1:
+                    ret += '\n'
+        return ret
+
     def __init__(self, size=0, position=(0, 0)):
         """Method to initialize the square object."""
         self.__size = size
@@ -28,9 +48,10 @@ class Square:
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        else:
+            self.__size = int(value)
 
     @property
     def position(self):
