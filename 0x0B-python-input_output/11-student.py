@@ -29,7 +29,7 @@ class Student():
             return dicta
 
         return obj
-    
+
     def reload_from_json(self, json):
-       """ for key in json:"""
-       self.__dict__ = json
+        for key in json:
+            self.__dict__[key] = json[key]
