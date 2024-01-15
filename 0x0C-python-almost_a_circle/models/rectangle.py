@@ -79,25 +79,25 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.__x, self.__y, self.__width, self.__height)
-        
+
     def upd(self, id=None, width=None, height=None, x=None, y=None):
-        if id != None:
+        if id is not None:
             self.id = id
-        if width != None:
+        if width is not None:
             self.width = width
-        if height != None:
+        if height is not None:
             self.height = height
-        if x != None:
+        if x is not None:
             self.x = x
-        if y != None:
+        if y is not None:
             self.y = y
 
     def update(self, *args, **kwargs):
         if args:
-                self.upd(*arg)
+            self.upd(*arg)
         elif kwargs:
-                self.upd(**kwargs)
+            self.upd(**kwargs)
 
     def to_dictionary(self):
-        return {"id": self.id, "width": self.__width, 
+        return {"id": self.id, "width": self.__width,
                 "height": self.__height, "x": self.__x, "y": self.__y}

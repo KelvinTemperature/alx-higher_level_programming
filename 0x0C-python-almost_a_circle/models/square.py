@@ -24,13 +24,13 @@ class Square(Rectangle):
                 self.id, self.x, self.y, self.width)
 
     def upd(self, id=None, size=None, x=None, y=None):
-        if id != None:
+        if id is not None:
             self.id = id
-        if size != None:
+        if size is not None:
             self.size = size
-        if x != None:
+        if x is not None:
             self.x = x
-        if y != None:
+        if y is not None:
             self.y = y
 
     def update(self, *args, **kwargs):
