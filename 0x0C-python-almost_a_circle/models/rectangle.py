@@ -7,6 +7,8 @@ class Rectangle(Base):
     """class rectangle implementation"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Constructors"""
+
         self.__width = width
         self.__height = height
         self.__x = x
