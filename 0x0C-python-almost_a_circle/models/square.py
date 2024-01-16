@@ -32,7 +32,7 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(
                 self.id, self.x, self.y, self.width)
 
-    def upd(self, id=None, size=None, x=None, y=None):
+    def __upd(self, id=None, size=None, x=None, y=None):
         """mathod to set parameters"""
 
         if id is not None:
@@ -48,9 +48,9 @@ class Square(Rectangle):
         """update parameters depending on args or kwargs"""
 
         if args:
-            self.upd(*args)
+            self.__upd(*args)
         elif kwargs:
-            self.upd(**kwargs)
+            self.__upd(**kwargs)
 
     def to_dictionary(self):
         """instance to dictionary"""
