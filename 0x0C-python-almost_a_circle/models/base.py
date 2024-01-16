@@ -58,8 +58,8 @@ class Base:
     def create(cls, **dictionary):
         """method that loads a dictionary to an instance"""
 
-        from model.rectangle import Rectangle
-        from model.square import Square
+        from models.rectangle import Rectangle
+        from models.square import Square
 
         if cls is Rectangle:
             dum = Rectangle(1, 1)
