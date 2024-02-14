@@ -1,2 +1,3 @@
---script to create a ndatabase in mysql server
-CREATE DATABASE hbtn_0c_0;
+--creates database
+--script to create a database in mysql server
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
