@@ -1,4 +1,4 @@
---compute average of record
+--compute average of record..
 --computes score average in second_table
 SELECT AVG(score) AS average
 FROM second_table;

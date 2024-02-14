@@ -1,3 +1,3 @@
---creates database
+--creates database..
 --script to create a database in mysql server
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;

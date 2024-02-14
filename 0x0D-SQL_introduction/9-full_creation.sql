@@ -1,4 +1,4 @@
---create a table
+--create a table..
 --creates a table second_table
 CREATE TABLE IF NOT EXSITS second_table (
 id INT,
