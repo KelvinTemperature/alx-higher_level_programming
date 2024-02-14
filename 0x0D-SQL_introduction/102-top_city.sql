@@ -1,5 +1,5 @@
---displays average temperature..
---displays average temperature by city
+-- displays average temperature..
+-- displays average temperature by city
 SELECT city, AVG(value) AS avg_temp 
 FROM temperatures
 WHERE month = 7 OR month = 8
