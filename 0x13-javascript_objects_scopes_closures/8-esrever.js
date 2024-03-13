@@ -1,6 +1,6 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  let rev = [];
+  const rev = [];
   let i;
   let j = 0;
 
