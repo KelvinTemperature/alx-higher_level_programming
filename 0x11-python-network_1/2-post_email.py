@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# Script that sends a post request
+""" Script that sends a post request """
+
 from urllib import request, parse
 import sys
 

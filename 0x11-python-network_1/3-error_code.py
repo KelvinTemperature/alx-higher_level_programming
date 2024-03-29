@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Script to display body of URl and handle Error
+""" Script to display body of URl and handle Error """
 from urllib import request, error
 import sys
 
