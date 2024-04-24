@@ -7,12 +7,12 @@ request(url, (err, response, body) => {
   if (err) { console.log(err); }
 
   const data = JSON.parse(body);
-  let count = 0;
+  let mCount = 0;
 
   for (let i = 0; i < data.count; i++) {
     for (let j = 0; j < (data.results[i].characters).length; j++) {
-      if (data.results[i].characters[j].includes('18')) { count += 1; }
+      if (data.results[i].characters[j].includes('18')) { mCount += 1; }
     }
   }
-  console.log(count);
+  console.log(mCount);
 });
