@@ -4,7 +4,7 @@ const request = require('request');
 const url = 'https://swapi-api.alx-tools.com/api/films/';
 
 request(url, (err, response, body) => {
-  if (err) {console.log(err);}
+  if (err) { console.log(err); }
 
   const data = JSON.parse(body);
   let count = 0;
